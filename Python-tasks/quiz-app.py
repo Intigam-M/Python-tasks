@@ -6,7 +6,7 @@ questions = [
     },
     {
         'question': 'Bunlardan hansi saitdir',
-        'options': ['b', 'a', 'c', 'd'],
+        'options': ['b', 'a', 'r', 'd'],
         'answer': 1
     },
     {
