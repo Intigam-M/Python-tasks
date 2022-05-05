@@ -42,17 +42,16 @@ questions = [
 ]
 
 variants = {"A":0, "B":1, "C":2, "D":3, "E":4}
-
 sual_count = 1
 duzgun_cavablar = 0
+
 for sual in questions:
-    
     print(str(sual_count)+".", sual['question'],  end="\n\n")
     print(list(variants.keys())[0]+")", sual['options'][0], end = "\n")
     print(list(variants.keys())[1]+")", sual['options'][1], end = "\n")
     print(list(variants.keys())[2]+")", sual['options'][2], end = "\n")
     print(list(variants.keys())[3]+")", sual['options'][3], end = "\n\n")
-
+   
     cavab = input("Cavab yazin:\n").upper()
 
     if cavab in variants:
@@ -62,13 +61,9 @@ for sual in questions:
         else:
             print(f"Cavab yanlisdir! Duzgun cavab {list(variants.items())[sual['answer']][0]} variantidir\n")
     else:
-     print(f"Cavab yanlisdir! Duzgun cavab {list(variants.items())[sual['answer']][0]} variantidir\n")
+        print(f"Cavab yanlisdir! Duzgun cavab {list(variants.items())[sual['answer']][0]} variantidir\n")
     
     print("-" *70, end = "\n\n")    
     sual_count+=1
         
-        
 print("Duzgun cavab sayi", duzgun_cavablar)
-
-
-
