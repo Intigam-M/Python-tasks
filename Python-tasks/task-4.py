@@ -53,24 +53,23 @@ kicik_oqul = []
 boyuk_oqlan_pul = 0
 kicik_oqlan_pul = 0
 
-for i in range(1,len(ferma)+1):
+for i in range(len(ferma)):
     
-    if i <= len(ferma) // 2:
-        boyuk_oqul.append(ferma[i-1])
-        boyuk_oqlan_pul += qiymetler[ferma[i-1]]
+    if i < len(ferma) // 2:
+        boyuk_oqul.append(ferma[i])
+        boyuk_oqlan_pul += qiymetler[ferma[i]]
     else:    
-        kicik_oqul.append(ferma[i-1]) 
-        kicik_oqlan_pul += qiymetler[ferma[i-1]]
-
-        
-result =(abs(boyuk_oqlan_pul - kicik_oqlan_pul)) // 2
+        kicik_oqul.append(ferma[i]) 
+        kicik_oqlan_pul += qiymetler[ferma[i]]
 
 print(f'Boyuk qardasin pulu: {boyuk_oqlan_pul}')
 print(f'Kicik qardasin pulu: {kicik_oqlan_pul}')
 
 if boyuk_oqlan_pul > kicik_oqlan_pul:
+    result =(boyuk_oqlan_pul - kicik_oqlan_pul) // 2
     print(f"Boyuk qardas kiciye {result} manat vermelidir")
 else:
+    result =(kicik_oqlan_pul - boyuk_oqlan_pul) // 2
     print(f"Kicik qardas boyuye {result} manat vermelidir")
         
 
