@@ -1,3 +1,4 @@
+# Sual 1 
 # n1 = 15 və n2 = 13. Başqa bir variable yaratmadan aşağıdakı sual işarələrini doludurun.
 # print('%s + %s = %s' ??????????) 
 # Output bu şəkildə olmalıdır: 15 + 13 = 28
@@ -7,7 +8,7 @@ n2 = 13
 
 print('%s + %s = %s' %(n1, n2, n1 + n2)) 
 
-
+# Sual 2
 # userData variablendan istifadə edərək aşağıdakı outputu çıxarın
 # Hormetli A. E. Serifov, sizin 5326-6644********** nomreli
 # kredit kartiniza 341.35AZN odenis edildi.
@@ -29,7 +30,7 @@ print('''Hormetli {first_name:.1}.{father_name:.1}.{last_name}, sizin {card_numb
 kredit kartiniza {payed:.2f}AZN odenis edildi.
 Umumi {debt:,}AZN teskil eden borcunuzdan {payed_percent:%} borc silinmisdir!'''.format(**userData[0]))
 
-
+# Sual 3
 # Aşağıdakı outputu çıxaran kod yazın.
 	#      0         0         0         0
     #      1         1         1         1
@@ -43,7 +44,7 @@ print ("{:<10} {:<10} {:<10} {:<10}".format('Decimal','Binary','Octal','Hex'))
 for i in range(30):
     print ("{:<10} {:<10} {:<10} {:<10}".format(i, bin(i)[2:], oct(i)[2:], hex(i)[2:]))
     
-
+# Sual 4
 # Örnək outputa nəzər yetirərək nəticənin həmin formada alınmasına diqqət edin.
 
 # Axtarilan Heyvan: At
