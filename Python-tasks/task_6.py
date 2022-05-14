@@ -25,7 +25,9 @@ userData = [
     }
 ]
 
-print("Hormetli {first_name:.1}.{father_name:.1}.{last_name}, sizin {card_number:*<17.9} nomreli\nkredit kartiniza {payed:.2f}AZN odenis edildi.\nUmumi {debt:,}AZN teskil eden borcunuzdan {payed_percent:%} borc silinmisdir!".format(**userData[0]))
+print('''Hormetli {first_name:.1}.{father_name:.1}.{last_name}, sizin {card_number:*<17.9} nomreli
+kredit kartiniza {payed:.2f}AZN odenis edildi.
+Umumi {debt:,}AZN teskil eden borcunuzdan {payed_percent:%} borc silinmisdir!'''.format(**userData[0]))
 
 
 # Aşağıdakı outputu çıxaran kod yazın.
