@@ -65,4 +65,3 @@ while True:
         bolen+=1
     if input_number == 1:
         break
-    
