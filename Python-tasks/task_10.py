@@ -15,8 +15,8 @@ with open('text.txt', 'w') as f:
 
 file_path = input('Minify etmek istediyiniz faylin adresini girin\n')
 with open(file_path,'r') as f:
-   numbers = f.readlines()
-   minify = "".join([number.rstrip('\n') for number in numbers])
+   content_line_list = f.readlines()
+   minify = "".join([line.rstrip('\n') for line in content_line_list])
     
 with open(file_path,'w') as f1:
     f1.write(minify)
