@@ -8,7 +8,7 @@ with open('text.txt', 'w') as f:
         counter-=1
 
 
-#  Sual 2       
+# Sual 2       
 # HTML, CSS, JS fayllarını minify (tək sətr) edən program hazirlayin hazırlayın. Örnək:
 # input ⇒ Minify etmek istediyiniz faylin adresini girin: C:\Users\Profile\Desktop\Project\app.js
 # output ⇒ Fayl uğurla minify edildi!

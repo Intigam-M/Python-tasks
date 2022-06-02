@@ -65,3 +65,8 @@ while True:
         bolen+=1
     if input_number == 1:
         break
+
+# Sekili binary data formada acmaq
+with open('programlasdirma-dili.png', 'rb') as f:
+    content =f.read()
+    print(str(content)[-63:])   
