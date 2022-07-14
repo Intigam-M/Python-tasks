@@ -67,6 +67,6 @@ cursor.execute(query)
 conn.commit()
 
 
-query = "SELECT company, AVG(salary) as ortalama FROM jobs WHERE expiration_date > '2022-07-10' and ortalama > 2000 GROUP BY company"
+query = "SELECT company, AVG(salary) FROM jobs WHERE expiration_date > '2022-07-10' GROUP BY company HAVING AVG(salary) > 2000"
 cursor.execute(query)
 
